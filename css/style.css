@@ -426,6 +426,11 @@ a.inst:hover {
     font: bold 14px/24px "Arial";
     color: #fd8300;
     margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.article a:hover {
+    color: #666;
 }
 
 .broshure {
