@@ -21,6 +21,17 @@ sup {
     margin: auto;
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background: #fff;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+    background-color: #fff;
+    top: 0;
+    left: 0;
+}
+
 .header-line .wrapper {
     padding: 10px 0;
 }
@@ -267,6 +278,10 @@ a.inst:hover {
     background: url(../img/phone.svg);
 }
 
+main {
+    padding-top: 165px;
+}
+
 .main-picture {
     background: -400px 0 url(../img/background.jpg);
     background-size: cover;
@@ -481,6 +496,11 @@ footer ul a {
     font: 14px/26px "Arial";
     color: #666666;
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+footer ul a:hover {
+    color: #fd8300;
 }
 
 footer .phone::after {
@@ -586,6 +606,10 @@ footer .phone::before {
     .burger {
         width: unset;
         height: unset;
+    }
+
+    .burger-menu::before {
+        content: none;
     }
 }
 
