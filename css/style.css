@@ -21,17 +21,6 @@ sup {
     margin: auto;
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    background: #fff;
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
-    background-color: #fff;
-    top: 0;
-    left: 0;
-}
-
 .header-line .wrapper {
     padding: 10px 0;
 }
@@ -148,16 +137,17 @@ a.inst:hover {
     background: url(../img/burger.svg) no-repeat;
 }
 
-.burger-menu li {
+.burger-menu a {
     padding: 15px;
     letter-spacing: 2px;
     line-height: 24px;
     color: #1f1f56;
     font-family: "Arial";
+    text-decoration: none;
     transition: all 0.3s ease;
 }
 
-.burger-menu li:hover {
+.burger-menu a:hover {
     background-color: #fd8300;
 }
 
@@ -276,10 +266,6 @@ a.inst:hover {
     top: 5%;
     left: calc(-10% + -12px);
     background: url(../img/phone.svg);
-}
-
-main {
-    padding-top: 165px;
 }
 
 .main-picture {
@@ -589,12 +575,12 @@ footer .phone::before {
         column-gap: 25px;
     }
 
-    .burger-menu li {
+    .burger-menu a {
         padding: unset;
         color: #b1b1d2;
     }
 
-    .burger-menu li:hover {
+    .burger-menu a:hover {
         background-color: unset;
         color: #fd8300;
     }
@@ -625,6 +611,20 @@ footer .phone::before {
 }
 
 @media screen and (min-width: 1440px) {
+    main {
+        padding-top: 165px;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        background: #fff;
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+        top: 0;
+        left: 0;
+    }
+
     .header-info .wrapper {
         justify-content: space-between;
     }

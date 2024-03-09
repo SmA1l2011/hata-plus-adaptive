@@ -1,0 +1,144 @@
+header {
+    background: #fff;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+}
+
+.main-wrapper {
+    display: block;
+}
+
+main {
+    padding-top: 40px;
+}
+
+.broshure {
+    max-width: unset;
+}
+
+.table-adaptive {
+    overflow-x: scroll;
+}
+
+.table-text h2 {
+    font: 700 24px/24px "Roboto Slab";
+    color: #24242b;
+    margin-bottom: 22px;
+}
+
+.table-text p {
+    font: 14px/24px "Arial";
+    color: #666;
+    max-width: 850px;
+}
+
+.top-p {
+    margin-bottom: 26px;
+}
+
+.table-text a {
+    display: block;
+    font: bold 14px/24px "Arial";
+    text-decoration: underline;
+    color: #fd8300;
+    transition: all 0.3s ease;
+    position: relative;
+    margin-bottom: 65px;
+}
+
+.table-text a::before {
+    content: '';
+    position: absolute;
+    max-width: 960px;
+    height: 1px;
+    background-color: #e4e4ec;
+    top: 240%;
+}
+
+.table-text a:hover {
+    color: #666;
+}
+
+.p-info {
+    margin: 20px 0;
+}
+
+table td {
+    box-shadow: inset 0px -1px 0px #cecedd;
+    background-color: #e4e4ec;
+    padding: 13px;
+    transition: all 0.3s ease;
+}
+
+table tr:last-child td {
+    box-shadow: unset;
+}
+
+table td:last-child {
+    text-align: right;
+}
+
+thead td {
+    font: 700 14px/24px "Roboto Slab";
+    color: #ffffff;
+}
+
+table thead td {
+    background-color: #1f1f56;
+}
+
+table thead td:first-child {
+    border-radius: 3px 0 0 0;
+}
+
+table thead td:last-child {
+    border-radius: 0 3px 0 0;
+}
+
+table tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 3px;
+}
+
+table tbody tr:last-child td:last-child {
+    border-radius: 0 0 3px 0;
+}
+
+tbody tr:hover td {
+    background-color: #fd8300;
+    color: #fff;
+}
+
+tbody td {
+    font: 14px/24px "Arial";
+    color: #666666;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.houses-for-sale {
+    width: 960px;
+}
+
+@media screen and (min-width: 768px) {
+    .table-adaptive {
+        overflow-x: unset;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        padding-top: 205px;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+        background: #fff;
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1));
+        top: 0;
+        left: 0;
+    }
+}
