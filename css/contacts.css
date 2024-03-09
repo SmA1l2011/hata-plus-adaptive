@@ -1,0 +1,208 @@
+.main-wrapper {
+    display: block;
+}
+
+.contact {
+    margin-bottom: 35px;
+}
+
+main {
+    padding-top: 40px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.contact-info address {
+    font-style: normal;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info ul:last-child {
+    width: 300px;
+}
+
+.contact-info ul p {
+    margin: 0;
+}
+
+.contact-info ul li {
+    font: 14px/21px "Arial";
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.contact-info ul li h3 {
+    font: 700 14px/24px "Roboto Slab";
+    color: #24242b;
+}
+
+.contact-info ul li b a {
+    font: bold 18px/24px "Arial";
+    color: #25252c;
+    text-decoration: none;
+}
+
+.contact-info ul li a:hover {
+    color: #fd8300;
+}
+
+.contact-info ul li a {
+    font: 16px/24px "Arial";
+    color: #25252c;
+    transition: all 0.3s ease;
+}
+
+.contact-info ul:last-child li:not(:first-child) {
+    margin-bottom: 20px;
+}
+
+.contact h2 {
+    font: 700 24px/24px "Roboto Slab";
+    color: #24242b;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.map {
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 370px;
+    margin-top: -70px;
+    border: none;
+}
+
+.inputs {
+    max-width: 255px;
+    position: relative;
+}
+
+.inputs .button {
+    margin: 0;
+    padding: 6.6px;
+    min-width: 140px;
+    border-radius: 21px;
+    background-color: #fd8300;
+    font: bold 14px/24px "Arial";
+    color: #fff;
+    margin-right: 30px;
+}
+
+.inputs .button:hover {
+    background: transparent;
+    color: #fd8300;
+}
+
+.inputs h2 {
+    margin: 0;
+    margin-bottom: 17px;
+    font: 700 14px/24px "Roboto Slab";
+    color: #24242b;
+}
+
+.contact hr {
+    border: 1px solid #e4e4ec;
+    width: 100%;
+    height: 1px;
+    margin: 0;
+}
+
+.inputs input::placeholder,
+.inputs textarea::placeholder {
+    font-style: italic;
+    font-family: "Arial";
+}
+
+.inputs input {
+    padding: 11px 15px;
+    max-width: 125px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #c5c5d4;
+}
+
+.inputs .topic {
+    min-width: 255px;
+}
+
+.inputs textarea {
+    padding: 11px 15px;
+    max-width: 255px;
+    max-height: 300px;
+    min-height: 106px;
+    resize: vertical;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid #c5c5d4;
+}
+
+.top-inputs,
+.down-inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form .down-inputs {
+    justify-content: unset;
+}
+
+.form .down-inputs input:not(:first-child) {
+    padding: unset;
+    min-width: unset;
+    margin-bottom: 3px;
+}
+
+.down-inputs label {
+    font: 13px/21px "Arial";
+    color: #666;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .map {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        padding-top: 205px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .inputs {
+        max-width: 467px;
+    }
+    .inputs .topic {
+        min-width: 467px;
+    }
+
+    .inputs textarea {
+        max-width: 467px;
+    }
+
+    .inputs input {
+        min-width: 230px;
+    }
+}
