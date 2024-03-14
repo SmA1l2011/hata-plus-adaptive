@@ -160,18 +160,10 @@ a.inst:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    column-gap: 75px;
     padding: 30px 0;
     width: 80%;
     margin: auto;
-}
-
-.contacts {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    column-gap: 90px;
-    row-gap: 15px;
-    padding: 0 75px;
 }
 
 .header-button {
@@ -200,6 +192,10 @@ a.inst:hover {
 .button:hover {
     background-color: #fd8300;
     color: #fff;
+}
+
+.post {
+    padding-left: 50px;
 }
 
 .phone a,
@@ -257,6 +253,7 @@ a.inst:hover {
 
 .phone {
     position: relative;
+    margin-bottom: 10px;
 }
 
 .phone a:hover {
@@ -320,7 +317,8 @@ a.inst:hover {
 }
 
 .aside {
-    max-width: 220px;
+    width: 20%;
+    min-width: 220px;
     margin-bottom: 45px;
 }
 
@@ -415,7 +413,6 @@ a.inst:hover {
 }
 
 .article p {
-    max-width: 677px;
     font: 14px/24px "Arial";
     color: #666666;
     margin-bottom: 25px;
@@ -434,7 +431,7 @@ a.inst:hover {
 }
 
 .broshure {
-    max-width: 714px;
+    width: 100%;
 }
 
 .broshure hr {
@@ -459,6 +456,7 @@ a.inst:hover {
 }
 
 .houses h2 {
+    text-align: center;
     font: 700 24px/24px "Roboto Slab";
     color: #24242b;
     margin-bottom: 25px;
@@ -557,15 +555,8 @@ footer .phone::before {
         background-size: cover;
     }
 
-    .phone::after {
-        content: '';
-        position: absolute;
-        width: 1px;
-        height: 51px;
-        background: #e4e4ec;
-        top: 0;
-        right: -20%;
-        z-index: -1;
+    .header-info .wrapper {
+        position: relative;
     }
 
     .burger-menu {
@@ -610,6 +601,14 @@ footer .phone::before {
 }
 
 @media screen and (min-width: 1024px) {
+    .houses h2 {
+        text-align: left;
+    }
+
+    .header-info .wrapper {
+        justify-content: space-between;
+    }
+
     .house-flex {
         justify-content: space-between;
         column-gap: 0;
@@ -618,9 +617,24 @@ footer .phone::before {
     .main-flex {
         justify-content: space-between;
     }
+
+    .broshure {
+        width: 70%;
+    }
 }
 
 @media screen and (min-width: 1440px) {
+    .header-info .wrapper::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 51px;
+        background: #e4e4ec;
+        top: 25%;
+        right: 50%;
+        z-index: -1;
+    }
+
     main {
         padding-top: 165px;
     }
@@ -631,9 +645,5 @@ footer .phone::before {
         z-index: 2;
         top: 0;
         left: 0;
-    }
-
-    .header-info .wrapper {
-        justify-content: space-between;
     }
 }

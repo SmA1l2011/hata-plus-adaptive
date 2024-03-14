@@ -74,7 +74,7 @@ main {
 .form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .map {
@@ -94,6 +94,7 @@ main {
 .inputs {
     max-width: 255px;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .inputs .button {
@@ -178,22 +179,11 @@ main {
     margin-left: 10px;
 }
 
-@media screen and (min-width: 1024px) {
-    .map {
-        width: 49%;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    main {
-        padding-top: 205px;
-    }
-}
-
 @media screen and (min-width: 768px) {
     .inputs {
         max-width: 467px;
     }
+
     .inputs .topic {
         min-width: 467px;
     }
@@ -204,5 +194,38 @@ main {
 
     .inputs input {
         min-width: 230px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .map {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        padding-top: 205px;
+    }
+
+    .form {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .inputs {
+        max-width: 934px;
+    }
+    .inputs .topic {
+        min-width: 934px;
+    }
+
+    .inputs textarea {
+        max-width: 934px;
+    }
+
+    .inputs input {
+        min-width: 460px;
     }
 }
