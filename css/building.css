@@ -116,6 +116,7 @@ tbody td {
 table {
     border-collapse: collapse;
     width: 100%;
+    min-width: 700px;
 }
 
 .houses-for-sale {
