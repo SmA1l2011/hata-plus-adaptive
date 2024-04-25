@@ -53,37 +53,32 @@ header {
 
 .social a {
     display: block;
-    background: url(../img/sprite.png) no-repeat;
     transition: all 0.3s ease;
 }
 
-a.fb {
-    width: 10px;
+.fb {
     height: 19px;
+    fill: #fff;
 }
 
-a.fb:hover {
-    background-position: 0 -19px;
+.fb:hover {
+    fill: #fd8300;
 }
 
-a.tw {
-    width: 18px;
-    height: 15px;
-    background-position: -10px -1px;
+.tw {
+    fill: #fff;
 }
 
-a.tw:hover {
-    background-position: -10px -16px;
+.tw:hover {
+    fill: #fd8300;
 }
 
-a.inst {
-    width: 19px;
-    height: 19px;
-    background-position: -28px -1px;
+.inst {
+    fill: #fff;
 }
 
-a.inst:hover {
-    background-position: -28px -20px;
+.inst:hover {
+    fill: #fd8300;
 }
 
 .burger-menu {
@@ -372,8 +367,8 @@ a.inst:hover {
     transition: all 0.3s ease;
 }
 
-.aside ul li ul li:last-child a {
-    border-bottom: 1px solid #cecedd;
+.aside .item-last {
+    border-bottom: unset;
 }
 
 .aside li:hover ul a {
