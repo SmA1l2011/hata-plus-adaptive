@@ -10,6 +10,46 @@ main {
     padding-top: 40px;
 }
 
+.wrapper label {
+    position: relative;
+}
+
+.wrapper input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+}
+
+.wrapper input[type=checkbox]+label::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fff;
+    top: 0;
+    left: -12%;
+    transform: translateY(5%);
+}
+
+.wrapper input[type=checkbox]:checked+label::before {
+    border: 1px solid #244dd7;
+}
+
+.wrapper input[type=checkbox]:checked+label::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 4px;
+    top: 5px;
+    left: -22px;
+    border: 2px solid #244dd7;
+    border-top: transparent;
+    border-right: transparent;
+    transform: rotate(-45deg);
+}
+
 .contact-info {
     display: flex;
     flex-wrap: wrap;
@@ -69,10 +109,12 @@ main {
 .contact h2 {
     font: 700 24px/24px "Roboto Slab";
     color: #24242b;
+    margin-bottom: 20px;
 }
 
 .form {
     display: flex;
+    column-gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -92,20 +134,21 @@ main {
 }
 
 .inputs {
-    max-width: 255px;
     position: relative;
     margin-bottom: 30px;
 }
 
-.inputs .button {
+.wrapper .inputs .button {
     margin: 0;
     padding: 6.6px;
+    width: unset;
     min-width: 140px;
     border-radius: 21px;
     background-color: #fd8300;
     font: bold 14px/24px "Arial";
     color: #fff;
     margin-right: 30px;
+    border: 2px solid #fd8300;
 }
 
 .inputs .button:hover {
@@ -129,16 +172,28 @@ main {
 
 .inputs input::placeholder,
 .inputs textarea::placeholder {
+    color: #9999a6;
     font-style: italic;
     font-family: "Arial";
 }
 
 .inputs input {
     padding: 11px 15px;
-    max-width: 125px;
+    width: 100%;
     margin-bottom: 10px;
     border-radius: 3px;
     border: 1px solid #c5c5d4;
+    outline: none;
+}
+
+.top-inputs label {
+    width: 100%;
+}
+
+.inputs input[type=text]:focus,
+.inputs input[type=tel]:focus {
+    border: 1px solid #fd8300;
+    box-shadow: 0px 0px 5px 0px rgba(251,131,0,1);
 }
 
 .inputs .topic {
@@ -147,18 +202,25 @@ main {
 
 .inputs textarea {
     padding: 11px 15px;
-    max-width: 255px;
+    width: 100%;
     max-height: 300px;
     min-height: 106px;
     resize: vertical;
     margin-bottom: 10px;
     border-radius: 3px;
     border: 1px solid #c5c5d4;
+    outline: none;
+}
+
+.inputs textarea:focus {
+    border: 1px solid #fd8300;
+    box-shadow: 0px 0px 5px 0px rgba(251,131,0,1);
 }
 
 .top-inputs,
 .down-inputs {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -180,30 +242,24 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-    .inputs {
-        max-width: 467px;
-    }
-
-    .inputs .topic {
-        min-width: 467px;
-    }
-
-    .inputs textarea {
-        max-width: 467px;
-    }
-
-    .inputs input {
-        min-width: 230px;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .map {
+    .top-inputs label {
         width: 49%;
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .inputs {
+        max-width: 650px;
+    }
+}
+
 @media screen and (min-width: 1440px) {
+    .map {
+        width: 49%;
+    }
+    .inputs {
+        max-width: 500px;
+    }
     main {
         padding-top: 205px;
     }

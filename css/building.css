@@ -64,14 +64,18 @@ main {
 }
 
 table td {
-    box-shadow: inset 0px -1px 0px #cecedd;
+    border-bottom: 1px solid #cecedd;
     background-color: #e4e4ec;
     padding: 13px;
     transition: all 0.3s ease;
 }
 
+table thead td {
+    border-bottom: unset;
+}
+
 table tr:last-child td {
-    box-shadow: unset;
+    border-bottom: unset;
 }
 
 table td:last-child {
@@ -104,6 +108,7 @@ table tbody tr:last-child td:last-child {
 }
 
 tbody tr:hover td {
+    border-bottom: unset;
     background-color: #fd8300;
     color: #fff;
 }
@@ -123,7 +128,7 @@ table {
     width: 960px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .table-adaptive {
         overflow-x: unset;
     }
