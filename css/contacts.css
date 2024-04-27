@@ -28,7 +28,7 @@ main {
     border: 1px solid #ccc;
     border-radius: 3px;
     background: #fff;
-    top: 0;
+    top: -3px;
     left: -12%;
     transform: translateY(5%);
 }
@@ -42,7 +42,7 @@ main {
     position: absolute;
     width: 7px;
     height: 4px;
-    top: 5px;
+    top: 3px;
     left: -22px;
     border: 2px solid #244dd7;
     border-top: transparent;

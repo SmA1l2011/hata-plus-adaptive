@@ -22,7 +22,7 @@ header {
 }
 
 .wrapper {
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
@@ -452,6 +452,14 @@ header {
     margin-bottom: 30px;
 }
 
+.card {
+    width: 100%;
+}
+
+.card img {
+    width: 100%; 
+}
+
 .houses a {
     display: block;
     font: bold 14px/24px "Arial";
@@ -473,23 +481,6 @@ header {
     font: 700 24px/24px "Roboto Slab";
     color: #24242b;
     margin-bottom: 25px;
-}
-
-.houses img {
-    display: block;
-    width: 50%;
-    margin: auto;
-}
-
-.houses figure,
-.houses figcaption {  
-    width: 100%;
-    margin: auto;
-}
-
-.houses figure p,
-.houses figure a {
-    text-align: center;
 }
 
 .house-flex {
@@ -551,6 +542,9 @@ footer .phone::before {
 }
 
 @media screen and (min-width: 425px) {
+    .wrapper {
+        width: 80%; 
+    }
     .main-picture h2 {
         font-size: 30px;
     }
@@ -570,7 +564,9 @@ footer .phone::before {
 }
 
 @media screen and (min-width: 768px) {
-
+    .house-flex {
+        justify-content: space-between;
+    }
     footer .phone,
     footer .post {
         padding-left: 20px;
@@ -631,36 +627,19 @@ footer .phone::before {
 }
 
 @media screen and (min-width: 1024px) {
-    .houses img {
-        display: inline;
-        width: unset;
-        margin: unset;
+    .houses {
+        max-width: 550px;
     }
-    
-    .houses figure,
-    .houses figcaption {  
-        width: unset;
-        margin: unset;
-    }
-    
     .houses figure p,
     .houses figure a {
         text-align: left;
     }
-    .main-flex {
-        justify-content: space-between;
-    }
-
-    .broshure {
-        width: 70%;
-    }
-
-    .aside {
-        width: 20%;
-    }
 }
 
 @media screen and (min-width: 1440px) {
+    .houses {
+        max-width: unset;
+    }
     .header-info .wrapper {
         justify-content: space-between;
     }
@@ -693,5 +672,11 @@ footer .phone::before {
         z-index: 2;
         top: 0;
         left: 0;
+    }
+    .aside {
+        width: 20%;
+    }
+    .broshure {
+        width: 70%;
     }
 }
