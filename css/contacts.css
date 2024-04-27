@@ -33,10 +33,6 @@ main {
     transform: translateY(5%);
 }
 
-.wrapper input[type=checkbox]:checked+label::before {
-    border: 1px solid #244dd7;
-}
-
 .wrapper input[type=checkbox]:checked+label::after {
     content: '';
     position: absolute;
@@ -44,7 +40,7 @@ main {
     height: 4px;
     top: 3px;
     left: -22px;
-    border: 2px solid #244dd7;
+    border: 2px solid #1f1f56;
     border-top: transparent;
     border-right: transparent;
     transform: rotate(-45deg);

@@ -564,6 +564,9 @@ footer .phone::before {
 }
 
 @media screen and (min-width: 768px) {
+    .card {
+        width: unset;
+    }
     .house-flex {
         justify-content: space-between;
     }
@@ -637,6 +640,9 @@ footer .phone::before {
 }
 
 @media screen and (min-width: 1440px) {
+    .main-flex {
+        justify-content: space-between;
+    }
     .houses {
         max-width: unset;
     }
