@@ -633,9 +633,6 @@ footer .phone::before {
 }
 
 @media screen and (min-width: 1024px) {
-    .houses {
-        max-width: 550px;
-    }
     .houses figure p,
     .houses figure a {
         text-align: left;
@@ -648,9 +645,6 @@ footer .phone::before {
 @media screen and (min-width: 1440px) {
     .main-flex {
         justify-content: space-between;
-    }
-    .houses {
-        max-width: unset;
     }
     .header-info .wrapper {
         justify-content: space-between;
