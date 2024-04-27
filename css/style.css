@@ -563,13 +563,16 @@ footer .phone::before {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
     .card {
-        width: unset;
+        width: 45%;
     }
     .house-flex {
         justify-content: space-between;
     }
+}
+
+@media screen and (min-width: 768px) {
     footer .phone,
     footer .post {
         padding-left: 20px;
@@ -636,6 +639,9 @@ footer .phone::before {
     .houses figure p,
     .houses figure a {
         text-align: left;
+    }
+    .card {
+        width: unset;
     }
 }
 
