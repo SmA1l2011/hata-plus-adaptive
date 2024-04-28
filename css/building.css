@@ -132,11 +132,18 @@ table {
     .table-adaptive {
         overflow-x: unset;
     }
+    .card {
+        width: 40%;
+    }
 }
 
 @media screen and (min-width: 1440px) {
     main {
         padding-top: 205px;
+    }
+
+    .card {
+        width: 20%;
     }
 
     header {
